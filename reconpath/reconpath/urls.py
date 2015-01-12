@@ -12,7 +12,9 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^upload/$', 'reconloc.views.upload_pic', name='upload_pic'),
+    url(r'^compara/$', 'reconloc.views.compara', name='compara'),
     url(r'^imagen/$', 'reconloc.views.imagen', name='imagen'),
+    url(r'^comparar/$', 'reconloc.views.comparar', name='comparar'),
 )
 
 urlpatterns += staticfiles_urlpatterns()
